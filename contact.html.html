@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 5</title>
+
+    <!-- Style -->
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+
+    <!--Font Awesome -->
+    <script src="https://kit.fontawesome.com/7c9dc3d97e.js" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+    <h1>let's chat</h1>
+
+    <img class="football" src="images/contact.jpg" alt="Virginia Tech Football Game" width="400">
+
+    <div class="container">
+      <div class="text">
+        <p>Thank you for visiting my website! I look forward to your message, and hope you'll get in contact soon. Please feel free to use the contact information below, or send me a message via the form, and I'll be sure to respond to you!</p>
+      </div>
+
+      <div class="written">
+        <p class="email"><a href="mailto:georgi.kayce@ufl.edu">georgi.kayce@ufl.edu</a></p>
+        <p class="phone"><a href="tel:+12405294709">(240) 529-4709</a></p>
+        <p>Washington, D.C.</p>
+        <a href="https://www.linkedin.com/in/kayce-georgi-1591572b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <form id="test_form" class="contactform" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+        <div class="nameform classifier">
+          <label for="nameinput" class="label_input_wrap">Name</label>
+          <input type="text" name="nameinput" id="nameinput" />
+        </div>
+
+        <div class="emailform classifier">
+          <label for="emailinput" class="label_input_wrap">Email</label>
+          <input type="email" name="emailinput" id="emailinput" />
+        </div>
+
+        <div class="comment classifier">
+          <label for="comments" class="label_input_wrap">Message</label>
+          <textarea name="comments" id="comments" cols="60" rows="6"></textarea>
+        </div>
+
+        <div class="reset button">
+          <input type="reset" value="Refresh">
+        </div>
+
+        <div class="submit button">
+          <input type="submit" value="Send">
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>

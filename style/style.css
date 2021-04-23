@@ -44,7 +44,7 @@ Universal Styling
 
 ===============================================*/
 main {
-  min-height: 77vh;
+  min-height: calc(100vh - 157px);
 }
 /* =============================================
 
@@ -71,6 +71,25 @@ footer ul li a {
   color: white;
   text-decoration: none;
 }
+
+/* =============================================
+
+Index Styling
+
+===============================================*/
+.home-photo {
+  display: inline-block;
+  width: 15%;
+  margin: 5% 5% 5% 10%;
+}
+
+.right {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5% 10% 5% 5%;
+}
+
 
 /* =============================================
 

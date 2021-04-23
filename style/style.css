@@ -20,6 +20,21 @@ Resume Styling
 
 /* =============================================
 
+Lightbox Styling
+
+===============================================*/
+
+.lightbox-example img {
+  width: 300px;
+}
+
+.lb-caption {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+/* =============================================
+
 Progress Bars
 
 ===============================================*/

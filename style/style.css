@@ -64,8 +64,16 @@ p {
   color: #200d13;
 }
 
+h1 {
+margin: 20px 0;
+  font-size: 36pt;
+  font-weight: bold;
+}
+
 h2 {
   margin: 10px 0;
+  font-size: 24pt;
+  font-weight: bold;
 }
 
 p,
@@ -140,7 +148,7 @@ Flip Cards
 
 .cards {
   width: 65%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .flip-card {
@@ -192,7 +200,7 @@ Flip Cards
 
 .flip-card a {
   color: #E87722;
-  font-weight: bold;
+  font-weight: bolder;
   text-decoration: none;
 }
 
@@ -223,38 +231,42 @@ Progress Bars
   border: black solid .25px;
   border-radius: 3px;
   width: 80%;
-  margin: auto;
+  margin: 10px auto;
 }
 
 .expert {
-  width: 100%;
-  background-color: #E87722;
   height: 10px;
+  animation: grow100 .5s  linear forwards;
 }
 
 .intermediate-high {
-  width: 85%;
-  background-color: #E87722;
   height: 10px;
+  animation: grow85 .5s  linear forwards;
+  animation-delay: .1s;
 }
 
-.intermediate {
-  width: 75%;
-  background-color: #E87722;
+.intermediate-1 {
   height: 10px;
+  animation: grow75 .5s  linear forwards;
+  animation-delay: .2s;
+}
+
+.intermediate-2 {
+  height: 10px;
+  animation: grow75 .5s  linear forwards;
+  animation-delay: .3s;
+}
+
+.intermediate-3 {
+  height: 10px;
+  animation: grow75 .5s  linear forwards;
+  animation-delay: .4s;
 }
 
 .half {
-  width: 60%;
-  background-color: #E87722;
   height: 10px;
-}
-
-.expert,
-.intermediate-high,
-.intermediate,
-.half {
-  animation: grow .5s  linear forwards;
+  animation: grow60 .5s  linear forwards;
+  animation-delay: .5s;
 }
 
 /* =============================================
@@ -263,17 +275,42 @@ Animation
 
 ===============================================*/
 
-@keyframes grow {
+@keyframes grow100 {
   0% {
-    transform: translateX(0);
+    width: 0%;
   }
   100% {
-    transform: translateX(1);
+    width: 100%;
+    background-color: #E87722;
   }
 }
 
-@keyframes test {
+@keyframes grow85 {
   0% {
-    transform:
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+    background-color: #E87722;
+  }
+}
+
+@keyframes grow75 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+    background-color: #E87722;
+  }
+}
+
+@keyframes grow60 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+    background-color: #E87722;
   }
 }

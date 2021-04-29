@@ -271,11 +271,20 @@ Lightbox Styling
 
 .lightbox-example img {
   width: 300px;
+  margin: 10px;
 }
 
 .lb-caption {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
+}
+
+.lightbox-example a:hover {
+  border-bottom: none;
+}
+
+.lightbox-example a:active {
+  border-bottom: none;
 }
 
 /*===========================

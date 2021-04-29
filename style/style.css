@@ -36,6 +36,8 @@ header nav ul li a {
   text-decoration: none;
   color: white;
   margin: 0 30px;
+  transition: .3s;
+  font-size: 14pt;
 }
 
 /* =============================================
@@ -86,6 +88,36 @@ li,
 .label_input_wrap {
   font-family: 'Lato', sans-serif;
 }
+
+main a {
+  text-decoration: none;
+  color: #200d13;
+  transition: .3s;
+}
+
+a:hover {
+  border-bottom: solid 2pt #0021A5;
+  transition: .3s;
+}
+
+a:active {
+  border-bottom: solid 2pt #E87722;
+  transition: .3s;
+}
+
+.left {
+  float: left;
+  width: 30%;
+  margin: 5% 0;
+}
+
+.right {
+  width: 60%;
+  float: right;
+  vertical-align: top;
+  margin: 5% 5%;
+}
+
 /* =============================================
 
 Footer Styling
@@ -110,24 +142,7 @@ footer ul li {
 footer ul li a {
   color: white;
   text-decoration: none;
-}
-
-/* =============================================
-
-Index Styling
-
-===============================================*/
-.left {
-  float: left;
-  width: 30%;
-  margin: 5% 0;
-}
-
-.right {
-  width: 60%;
-  float: right;
-  vertical-align: top;
-  margin: 5% 5%;
+  transition: .3s;
 }
 
 /* =============================================
@@ -136,12 +151,50 @@ Resume Styling
 
 ===============================================*/
 .skills {
-  float: left;
   border: #0021A5 solid 5px;
   border-radius: 3px;
-  width: 25%;
-  padding: 20px;
-  margin: 20px 40px;
+  width: 15%;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 2% 0;
+}
+
+.resume {
+  width: 60%;
+  margin-left: 5%;
+  display: inline-block;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.resume ul {
+  padding-left: 60px;
+}
+
+.resume li {
+  margin: 1% 0;
+}
+
+.employment p,
+.education p {
+  margin: 5px 0;
+}
+
+.employment p:first-of-type,
+.education p:first-of-type {
+  padding-top: 15px;
+}
+
+.resume div:last-of-type {
+  padding-bottom: 30px;
 }
 
 /* =============================================
@@ -206,6 +259,7 @@ Flip Cards
   color: #E87722;
   font-weight: bolder;
   text-decoration: none;
+  transition: .3s;
 }
 
 
@@ -290,7 +344,11 @@ textarea {
   padding-bottom: 20px;
 }
 
-
+.written a {
+  text-decoration: none;
+  color: #200d13;
+  transition: .3s;
+}
 
 /* =============================================
 

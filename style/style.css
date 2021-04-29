@@ -287,6 +287,40 @@ Lightbox Styling
   border-bottom: none;
 }
 
+/* =============================================
+
+Details/Summary Styling
+
+===============================================*/
+
+details {
+  background-color: lightgray;
+  border: solid 1pt #200d13;
+}
+
+summary {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding: 5px;
+}
+
+details ul {
+  padding: 10px 10px 10px 40px;
+}
+
+details ul li {
+  margin: 5px;
+}
+
+.courses {
+  margin: 20px 0;
+  width: 50%;
+}
+
+summary:hover {
+  cursor: pointer;
+}
+
 /*===========================
 
 

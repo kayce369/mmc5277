@@ -59,7 +59,6 @@ h4 {
 h1,
 h2,
 h3,
-h4,
 p {
   color: #200d13;
 }
@@ -76,9 +75,15 @@ h2 {
   font-weight: bold;
 }
 
+main p {
+  margin: 5% 0;
+  font-size: 12pt;
+}
+
 p,
 a,
-li {
+li,
+.label_input_wrap {
   font-family: 'Lato', sans-serif;
 }
 /* =============================================
@@ -112,19 +117,18 @@ footer ul li a {
 Index Styling
 
 ===============================================*/
-.home-photo {
-  display: inline-block;
-  width: 15%;
-  margin: 5% 5% 5% 10%;
+.left {
+  float: left;
+  width: 30%;
+  margin: 5% 0;
 }
 
 .right {
-  width: 45%;
-  display: inline-block;
+  width: 60%;
+  float: right;
   vertical-align: top;
-  margin: 5% 10% 5% 5%;
+  margin: 5% 5%;
 }
-
 
 /* =============================================
 
@@ -193,7 +197,7 @@ Flip Cards
 }
 
 .flip-card p {
-  padding: 13px 5px;
+  padding: 5px 5px;
   font-size: 80%;
   color: white;
 }
@@ -219,6 +223,74 @@ Lightbox Styling
   font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
+
+/*===========================
+
+
+  Form Styling
+
+
+==============================*/
+
+.label_input_wrap {
+  display: block;
+}
+
+.classifier {
+  padding: 20px 0 0;
+}
+
+.reset input,
+.submit input {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #8B1F41;
+  color: white;
+}
+
+.reset,
+.submit {
+  display: inline;
+}
+
+.reset {
+  padding: 0 5px;
+}
+
+.emailform input,
+.nameform input,
+textarea {
+  border: #8B1F41 solid 2px;
+  border-radius: 5px;
+}
+
+.written {
+  position: relative;
+}
+
+.fa-linkedin {
+  color: #0021A5;
+  font-size: 60pt;
+  transition: .3s;
+  position: absolute;
+  left: 55%;
+  top: 10%;
+}
+
+.fa-linkedin:hover {
+  color: #E87722;
+  transition: .3s;
+}
+
+.written p {
+  margin: 5px 0;
+}
+
+.written p:last-of-type {
+  padding-bottom: 20px;
+}
+
+
 
 /* =============================================
 

@@ -36,9 +36,9 @@ header nav ul li a {
   text-decoration: none;
   color: white;
   margin: 0 30px;
-  transition: .3s;
+  transition: .1s;
   font-size: 14pt;
-  text-decoration-color: #0021A5;
+  border-bottom: #0021A5;
 }
 
 /* =============================================
@@ -93,28 +93,28 @@ li,
 main a {
   text-decoration: none;
   color: #200d13;
-  transition: .3s;
-  text-decoration-color: #0021A5;
+  transition: .1s;
+  border-bottom-color: #0021A5;
 }
 
 a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
-  text-decoration-color: #0021A5;
-  transition: .3s;
+  border-bottom: #0021A5 5px solid;
+  transition: .1s;
 }
 
 a:active {
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
-  text-decoration-color: #E87722;
-  transition: .3s;
+  border-bottom: #E87722 5px solid;
+  transition: .1s;
 }
 
 .left {
   float: left;
   width: 30%;
   margin: 5% 0;
+}
+
+.left img {
+  width: 100%;
 }
 
 .right {
@@ -148,8 +148,8 @@ footer ul li {
 footer ul li a {
   color: white;
   text-decoration: none;
-  transition: .3s;
-  text-decoration-color: #0021A5;
+  transition: .1s;
+  border-bottom-color: #0021A5;
 }
 
 /* =============================================
@@ -263,9 +263,26 @@ Flip Cards
 
 .flip-card a {
   color: #E87722;
-  font-weight: bolder;
+  font-size: 14pt;
   text-decoration: none;
   transition: .3s;
+}
+
+.flip-card a:hover {
+  color: #E87722;
+  font-size: 14pt;
+  text-decoration: none;
+  transition: .3s;
+  font-weight: bold;
+}
+
+.flip-card a:active {
+  color: #E87722;
+  font-size: 14pt;
+  text-decoration: none;
+  transition: .3s;
+  font-weight: bold;
+  border-bottom: none;
 }
 
 
@@ -396,21 +413,18 @@ textarea {
 .written a {
   text-decoration: none;
   color: #200d13;
-  transition: .3s;
+  transition: .1s;
+  border-bottom-color: #0021A5;
 }
 
 .written a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
-  text-decoration-color: #0021A5;
-  transition: .3s;
+  border-bottom: #0021A5 5px solid;
+  transition: .1s;
 }
 
 .written a:active {
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
-  text-decoration-color: #E87722;
-  transition: .3s;
+  border-bottom: #E87722 5px solid;
+  transition: .1s;
 }
 
 /* =============================================

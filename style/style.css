@@ -38,6 +38,7 @@ header nav ul li a {
   margin: 0 30px;
   transition: .3s;
   font-size: 14pt;
+  text-decoration-color: #0021A5;
 }
 
 /* =============================================
@@ -93,15 +94,20 @@ main a {
   text-decoration: none;
   color: #200d13;
   transition: .3s;
+  text-decoration-color: #0021A5;
 }
 
 a:hover {
-  border-bottom: solid 2pt #0021A5;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #0021A5;
   transition: .3s;
 }
 
 a:active {
-  border-bottom: solid 2pt #E87722;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #E87722;
   transition: .3s;
 }
 
@@ -143,6 +149,7 @@ footer ul li a {
   color: white;
   text-decoration: none;
   transition: .3s;
+  text-decoration-color: #0021A5;
 }
 
 /* =============================================
@@ -165,7 +172,6 @@ Resume Styling
   margin-left: 5%;
   display: inline-block;
 }
-
 
 .bold {
   font-weight: bold;
@@ -390,6 +396,20 @@ textarea {
 .written a {
   text-decoration: none;
   color: #200d13;
+  transition: .3s;
+}
+
+.written a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #0021A5;
+  transition: .3s;
+}
+
+.written a:active {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #E87722;
   transition: .3s;
 }
 
